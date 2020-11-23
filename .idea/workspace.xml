@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="491bc5a4-d582-4a4d-b2aa-42f9374e65c8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kduC3e52SoGy6LUoY26q7lfc5R" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\jetBrains\net\netWork\img" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="491bc5a4-d582-4a4d-b2aa-42f9374e65c8" name="Default Changelist" comment="" />
+      <created>1606042658736</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606042658736</updated>
+      <workItem from="1606042659821" duration="206000" />
+      <workItem from="1606042880669" duration="809000" />
+      <workItem from="1606043705413" duration="149000" />
+      <workItem from="1606043870945" duration="1879000" />
+      <workItem from="1606045983546" duration="47000" />
+      <workItem from="1606046040705" duration="140000" />
+      <workItem from="1606046245711" duration="19000" />
+      <workItem from="1606046319079" duration="2075000" />
+      <workItem from="1606050753795" duration="1324000" />
+      <workItem from="1606057121145" duration="3087000" />
+      <workItem from="1606130162290" duration="12381000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="90" key="#检查" timestamp="1606142557216">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="90" key="#检查/0.0.1536.824@0.0.1536.824" timestamp="1606142557216" />
+    <state x="620" y="181" key="FileChooserDialogImpl" timestamp="1606043053059">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="620" y="181" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606043053059" />
+    <state x="332" y="113" key="SettingsEditor" timestamp="1606144643809">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="332" y="113" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606144643809" />
+    <state x="545" y="285" width="598" height="284" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1606043082458">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="545" y="285" width="598" height="284" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824@0.0.1536.824" timestamp="1606043082458" />
+  </component>
+</project>

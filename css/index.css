@@ -1,0 +1,247 @@
+*{
+    margin: 0;/*外边距*/
+    padding: 0;/*内边距*/
+}
+#head{
+    position: relative;
+    height: 240px;
+    text-align: center;
+    border: #000 1px dotted;
+}
+#main{
+    overflow: auto;
+    /* background: #747; */
+    text-align: center;
+    /* border: #000 1px solid; */
+}
+#foot{
+    height: 200px;
+    /* background:#891; */
+    text-align: center;
+    border: rgb(0, 0, 0) 1px dotted;
+}
+.container{
+    width:1600px;
+    /* background: #39e0bc; */
+    opacity: 0.7;
+    overflow: auto;
+    /* border: #000 1px solid; */
+    margin: auto;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(11, 145, 255, 0.5), rgba(255,0,0,0));
+
+}
+.title{
+    height:50px;
+    /* background:#f0e915; */
+    
+    /* border: #000 1px solid; */
+}
+.divFather{
+    height: 400px;
+    width: 1600px;
+    margin: auto;
+    display: flex;
+    display: -webkit-flex;
+    overflow: hidden;
+    justify-content: center;
+    
+}
+.div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8,.div9{
+    /* background: #00ff2f; */
+    
+    height: 300px;
+    width:30%;
+    float:left;
+    /* border: #000 1px solid; */
+    margin: 14px;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.search-box{
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: rgb(11, 145, 255);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover>.search-txt{
+    width: 380px;
+    padding: 0 6px;
+}
+.search-box:hover>.search-btn{
+    background:  rgb(11, 145, 255);
+}
+.search-btn{
+    color: #e84118;
+    float:right ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:  rgb(11, 145, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+input::-webkit-input-placeholder{
+    color:white;
+}
+.search-txt{
+
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+table{
+    /*border:1px solid rgb(11, 145, 255);*/
+    border-radius: 8px;
+    width: 400px;
+    display: block;
+    margin: auto;
+    z-index: 1;
+    background-position: center top;
+    background-size: cover;
+}
+table:after{
+    background-image: url(../img/sea.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.8);
+    z-index: -1;
+}
+table tr td {
+    padding: 20px 5px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    color: wheat;
+}
+table tr td a{
+    padding: 5px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+table:hover{
+    background:black;
+    opacity: 0.9;
+    color: white;
+    transform: scale(1.1);
+    -webkit-transition: 1s;
+}
+table tr td:hover{
+    background:gray;
+    -webkit-transition: 0.5s;
+    transform: scale(1.2) rotate(-720deg);
+}
+.head-title{
+    font-size: 50px;
+    font-family: 华文行楷;
+    margin: 20px auto;
+    width: 550px;
+    opacity: 0.7;
+    font-weight: bold;
+    background-image:
+            -webkit-gradient( linear, left top, right top,
+            color-stop(0, #00ffde),
+            color-stop(0.15, #00b1ff),
+            color-stop(0.3, #0099ff),
+            color-stop(0.45, #0f00ff),
+            color-stop(0.6, #0c00ff),
+            color-stop(0.75, #0099ff),
+            color-stop(0.9, #00b1ff),
+            color-stop(1, #00ffea) );
+    color: transparent;
+    -webkit-background-clip: text;
+}
+:root {
+    --color2: #00ffff;
+    --color4: #007bff;
+    --color6: #0500ff;
+}
+.clock_box{
+    position: relative;
+    width: 240px;
+    height: 80px;
+    border-radius: 10px;
+    background-image: linear-gradient(135deg, rgba(255,0,0,0), rgba(11, 145, 255, 1), rgba(255,0,0,0));
+    /* 居中 */
+    float: left;
+    display: flex;
+    left: 20px;
+    top: 80px;
+    justify-content: center;
+    align-items: center;
+    /*animation: animate 4s linear infinite;*/
+}
+.clock_box::after, .clock_box::before {
+    position: absolute;
+    content: "";
+    /* 集成父级样式 */
+    background-image: inherit;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    filter: blur(15px);
+}
+
+.clock_box::before {
+    filter: blur(100px);
+}
+
+.clock {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    background-color: #2b2a2a;
+    border-radius: 8px;
+    /* 居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock p {
+    font-size: 30px;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: 2px;
+    background-image: linear-gradient(135deg, var(--color2), var(--color4), var(--color6));
+    /* text不是通用样式属性值 */
+    /*background-clip: text;*/
+    /* 这个是chrome */
+    -webkit-background-clip: text;
+}
+
+@keyframes animate {
+    100% {
+        /* 色相变化 */
+        filter: hue-rotate(360deg);
+    }
+}

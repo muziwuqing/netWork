@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航</title>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body style="background: url(./img/sea.jpg) no-repeat center; background-size: cover;">
+<div id="head">
+    <div class="clock_box">
+        <div class="clock">
+            <p id="time">12:12:12 AM</p>
+        </div>
+    </div>
+
+    <div class="head-title">这是一个简易导航页</div>
+    <form onsubmit="return search()" class="search-box">
+        <input autofocus id="search_input" class="search-txt" type="text" autocomplete="off" placeholder="搜索一下">
+        <div class="search-btn">
+            <img onclick="return search()" src="./img/search.png" alt="搜">
+        </div>
+    </form>
+</div>
+<div id="main">
+    <div class="container">
+        <div class="title"></div>
+        <div class="divFather">
+            <div class="div1">
+                <table>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>热门</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.baidu.com/" target="_blank">百度</a></td>
+                        <td><a href="https://www.google.com/" target="_blank">谷歌</a></td>
+                        <td><a href="https://cn.bing.com/" target="_blank">必应</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.sogou.com/" target="_blank">搜狗</a></td>
+                        <td><a href="https://www.toutiao.com/" target="_blank">今日头条</a></td>
+                        <td><a href="https://jandan.net/" target="_blank">煎蛋</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.dgtle.com/" target="_blank">数字尾巴</a></td>
+                        <td><a href="https://www.dogedoge.com/" target="_blank">多吉</a></td>
+                        <td><a href="https://lookao.com/search?q=" target="_blank">lookao</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="div2">
+                <table>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>社交</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.weibo.com/" target="_blank">微博</a></td>
+                        <td><a href="https://tieba.baidu.com/" target="_blank">贴吧</a></td>
+                        <td><a href="https://www.zhihu.com/" target="_blank">知乎</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.douban.com/" target="_blank">豆瓣</a></td>
+                        <td><a href="https://www.v2ex.com/" target="_blank">V2EX</a></td>
+                        <td><a href="https://www.jianshu.com/" target="_blank">简书</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://twitter.com/" target="_blank">Twitter</a></td>
+                        <td><a href="https://www.facebook.com/" target="_blank">facebook</a></td>
+                        <td><a href="http://city.zhenai.com/" target="_blank">珍爱</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="div3">
+                <table>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>咨询</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.163.com/" target="_blank">网易</a></td>
+                        <td><a href="http://www.qq.com/" target="_blank">腾讯</a></td>
+                        <td><a href="http://www.sina.com.cn/" target="_blank">新浪</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.sohu.com/" target="_blank">搜狐</a></td>
+                        <td><a href="http://www.ifeng.com/" target="_blank">凤凰网</a></td>
+                        <td><a href="http://www.people.com.cn/" target="_blank">人民网</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://xinhuanet.com/" target="_blank">新华网</a></td>
+                        <td><a href="https://www.guancha.cn/" target="_blank">观察者网</a></td>
+                        <td><a href="http://www.china.com.cn/" target="_blank">中国网   </a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="divFather">
+            <div class="div4">
+                <table>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>购物</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.taobao.com/" target="_blank">淘宝</a></td>
+                        <td><a href="https://www.jd.com/" target="_blank">京东</a></td>
+                        <td><a href="https://www.amazon.cn/" target="_blank">亚马逊</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.suning.com/" target="_blank">苏宁易购</a></td>
+                        <td><a href="https://you.163.com/" target="_blank">网易严选</a></td>
+                        <td><a href="https://www.mi.com/" target="_blank">小米商城</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.smzdm.com/" target="_blank">什么值得买</a></td>
+                        <td><a href="https://www.mogu.com/" target="_blank">蘑菇街</a></td>
+                        <td><a href="https://www.vip.com/?wxsdk=1" target="_blank">唯品会</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="div5">
+                <table>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>视频</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.youku.com/" target="_blank">优酷</a></td>
+                        <td><a href="https://www.iqiyi.com/" target="_blank">爱奇艺</a></td>
+                        <td><a href="https://v.qq.com/" target="_blank">腾讯视频</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></td>
+                        <td><a href="https://www.youtube.com/" target="_blank">YouTube</a></td>
+                        <td><a href="https://www.douyu.com/" target="_blank">斗鱼直播</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.huya.com/" target="_blank">虎牙直播</a></td>
+                        <td><a href="https://film.sohu.com/vip.html?channeled=1211300002" target="_blank">搜狐视频</a></td>
+                        <td><a href="https://www.mgtv.com/" target="_blank">芒果TV</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="div6">
+                <table>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>工作</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://cn.linkedin.com/" target="_blank">领英</a></td>
+                        <td><a href="https://www.lagou.com/" target="_blank">拉勾网</a></td>
+                        <td><a href="https://www.zhaopin.com/" target="_blank">智联招聘</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.51job.com/" target="_blank">前程无忧</a></td>
+                        <td><a href="http://www.yingjiesheng.com/" target="_blank">应届生</a></td>
+                        <td><a href="https://maimai.cn/" target="_blank">脉脉</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.v2ex.com/?tab=jobs" target="_blank">酷工作</a></td>
+                        <td><a href="https://www.jz-job.com/" target="_blank">兼职网</a></td>
+                        <td><a href="http://www.job.cn/" target="_blank">工作网</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="divFather">
+            <div class="div7">
+                <table>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>生活</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.meituan.com/" target="_blank">美团</a></td>
+                        <td><a href="https://www.dianping.com/" target="_blank">大众点评</a></td>
+                        <td><a href="https://www.ctrip.com/" target="_blank">携程</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.qunar.com/" target="_blank">去哪儿</a></td>
+                        <td><a href="https://www.alitrip.com/" target="_blank">飞猪</a></td>
+                        <td><a href="https://kyfw.12306.cn/otn/index/init" target="_blank">12306</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.mafengwo.cn/" target="_blank">马蜂窝</a></td>
+                        <td><a href="https://www.ele.me/" target="_blank">饿了么</a></td>
+                        <td><a href="https://www.huolala.cn/" target="_blank">货拉拉</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="div8">
+                <table>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>便捷</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://fanyi.baidu.com/" target="_blank">词典翻译</a></td>
+                        <td><a href="http://www.weather.com.cn/live/" target="_blank">天气预报</a></td>
+                        <td><a href="https://www.kuaidi100.com/" target="_blank">快递查询</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://cn.office-converter.com/" target="_blank">在线转换</a></td>
+                        <td><a href="https://send.firefox.com/" target="_blank">临时网盘</a></td>
+                        <td><a href="https://wx.qq.com/" target="_blank">网页微信</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://mail.qq.com/" target="_blank">QQ邮箱</a></td>
+                        <td><a href="https://uigradients.com/#JShine" target="_blank">渐变色</a></td>
+                        <td><a href="https://www.toolfk.com/" target="_blank">工具箱</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="div9">
+                <table>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>游戏</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://store.steampowered.com/" target="_blank">Steam</a></td>
+                        <td><a href="http://www.gamersky.com/" target="_blank">游民星空</a></td>
+                        <td><a href="http://www.tgbus.com/" target="_blank">口袋巴士</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.17173.com/" target="_blank">17173</a></td>
+                        <td><a href="http://www.duowan.com/" target="_blank">多玩游戏</a></td>
+                        <td><a href="https://www.3dmgame.com/" target="_blank">3DMGAME</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.66rpg.com/" target="_blank">橙光游戏</a></td>
+                        <td><a href="https://www.ali213.net/" target="_blank">游侠网</a></td>
+                        <td><a href="http://www.4399.com/" target="_blank">4399</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div id="foot"></div>
+</div>
+<script>
+    // 获取页面id=time的元素（P元素<p id="time">12:12:12 AM</p>）
+    var time = document.querySelector("#time");
+    up(time);
+    // 定义函数传入time元素
+    function up(time_el) {
+        // 获取当前时间
+        let date = new Date();
+        // 获取时分秒
+        let h = date.getHours();
+        let m = date.getMinutes();
+        let s = date.getSeconds();
+        // 上午与下午
+        let day_night = "AM";
+
+        // 计算上午与下午
+        if (h > 12) {
+            h = h - 12;
+            day_night = "PM";
+        }
+
+        // 如果时间小于10则前面补充0
+        if (h < 10) { h = "0" + h; }
+        if (m < 10) { m = "0" + m; }
+        if (s < 10) { s = "0" + s; }
+
+        // 拼接时间并且赋值给time元素的文本中，从而显示
+        time_el.textContent = h + ":" + m + ":" + s + " " + day_night;
+
+    }
+
+    // 定时器，每秒执行一次实现更新
+    setInterval(() => {
+        up(time);
+    }, 1000);
+
+</script>
+</body>
+</html>
