@@ -52,6 +52,18 @@ a{
     font-weight: bold;
     margin: 0 5px;
 }
+.title .theme #id{
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/theme.png");
+    float: right;
+}
+.title img{
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
 .divFather{
     height: 400px;
     width: 1600px;

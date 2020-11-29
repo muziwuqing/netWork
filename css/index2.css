@@ -53,6 +53,12 @@ a{
     font-weight: bold;
     margin: 0 5px;
 }
+.title img{
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
 .divFather{
     height: 400px;
     width: 1600px;
