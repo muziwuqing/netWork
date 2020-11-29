@@ -1,90 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style type="text/css">
-        .section{
-            width: 800px;
-            margin: 100px auto;
+
+<div id="back-to-top" class="red" data-scroll="body" style="top:-46px;color:red;">
+    </div><!--撑开网页代码-->
+        <p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><p>hello</p><!--以上是撑开网页代码-->
+
+
+//CSS样式
+#back-to-top {
+    position:fixed;
+    right:50px;
+    z-index:9;
+    width:70px;
+    height:900px;
+    background:url('/Content/Images/scroll.png');
+    transition:0.5s;
+    cursor:pointer;
+} //JS部分:
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+    window.onload = function() {
+        // 利用 data-scroll 属性，滚动到任意 dom 元素
+    $.scrollto = function(scrolldom, scrolltime) {
+        $(scrolldom).click(function() {
+            var scrolltodom = $(this).attr("data-scroll");
+            $(this).addClass("active").siblings().removeClass("active");
+            $('html, body').animate({
+                scrollTop: $(scrolltodom).offset().top
+            }, scrolltime);
+            return false;      });
+    };
+    //判断位置控制 返回顶部的显隐
+    if($(window).width() > 800) {
+        //如果窗体的宽度大于800
+    var backTo = $("#back-to-top");
+    //获取back-to-top对象
+    var backHeight = $(window).height() - 980 + 'px';
+    //让window高度减980
+    $(window).scroll(function() {
+        if($(window).scrollTop() > 700 && backTo.css('top') === '-900px') {
+            backTo.css('top', backHeight);
         }
-        section article{
-            float: left;
-            width: 200px;
-            height: 300px;
-            overflow: hidden;
-            border-radius: 4px;
+        else if($(window).scrollTop() <= 700 && backTo.css('top') !== '-900px') {
+            backTo.css('top', '-900px');
         }
-        #text-a{
-            background: #373334;
-            color: white;
-        }
-        #text-b{
-            background-color: #C8D7D2;
-        }
-        #text-c{
-            background-color: #F3F2F0;
-        }
-        #text-d{
-            background-color: #D74339;
-        }
-        h1{
-            margin: 10px 10px 5px 50px;
-        }
-        p{
-            margin: 12px 50px;
-        }
-        section:hover article{
-            width: 50px;
-        }
-        section article:hover{
-            width: 650px;
-            overflow: auto;
-        }
-    </style>
-</head>
-<body>
-    <section>
-        <article id="text-a">
-            <h1>这是标题</h1>
-            <p>这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文</p>
-        </article>
-        <article id="text-b">
-            <h1>这是标题</h1>
-            <p>这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文</p>
-        </article>
-        <article id="text-c">
-            <h1>这是标题</h1>
-            <p>这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文</p>
-        </article>
-        <article id="text-d">
-            <h1>这是标题</h1>
-                <p>这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                    这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                    这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                    这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                    这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                    这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文
-                    这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文这是正文</p>
-        </article>
-    </section>
-</body>
-</html>
+    });
+    }
+    //启用
+    $.scrollto("#back-to-top", 800);
+    }
+</script>
