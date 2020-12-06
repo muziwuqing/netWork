@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>喜欢的相片</title>
-    <link rel="stylesheet" href="./css/3d.css">
-</head>
-<body>
-    <div class="container">
-        <div class="item front"></div>
-        <div class="item back"></div>
-        <div class="item left"></div>
-        <div class="item right"></div>
-        <div class="item top"></div>
-        <div class="item bottom"></div>
-    </div>
-</body>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>喜欢的相册</title>
+		<link rel="stylesheet" href="css/3d.css" />
+	</head>
+	<body>
+		<!--/*外层最大容器*/-->
+		<div class="wrap">
+	<!--	/*包裹所有元素的容器*/-->
+		<div class="cube">
+			<!--前面图片 -->
+			<div class="out_front">
+				<img src="./img/king1.jpg"  class="pic"/>
+			</div>
+			<!--后面图片 -->
+			<div class="out_back">
+				<img src="./img/king2.jpg"  class="pic"/>
+			</div>
+			<!--左图片 -->
+			<div class="out_left">
+				<img src="./img/king3.jpg"  class="pic"/>
+			</div>
+			<div class="out_right">
+				<img src="./img/king4.jpg"  class="pic"/>
+			</div>
+			<div class="out_top">
+				<img src="./img/king5.jpg"  class="pic"/>
+			</div>
+			<div class="out_bottom">
+				<img src="./img/king6.jpg"  class="pic"/>
+			</div>
+			<!--小正方体 --> 
+			<span class="in_front">
+				<img src="./img/king1.jpg" class="in_pic" />
+			</span>
+			<span class="in_back">
+			     <img src="./img/king2.jpg" class="in_pic" />
+			</span>
+			<span class="in_left">
+				<img src="./img/king3.jpg" class="in_pic" />
+			</span>
+			<span class="in_right">
+				<img src="./img/king4.jpg" class="in_pic" />
+			</span>
+			<span class="in_top">
+				<img src="./img/king5.jpg" class="in_pic" />
+			</span>
+			<span class="in_bottom">
+				<img src="./img/king6.jpg" class="in_pic" />
+			</span>
+		</div>
+		</div>
+	</body>
 </html>

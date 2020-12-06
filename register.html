@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style type="text/css">
+        html body{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url("./img/rej.jpg") no-repeat;
+            background-size: 100% 100%;
+            z-index:-1;
+
+        }
+
+        .title{
+            font-size: 32px;
+            text-align: center;
+            background: #000000;
+            opacity: 0.5;
+            width: 60%;
+            margin: 20px auto 0;
+            color: #63c0f0;
+
+        }
+        .register{
+            background: #000000;
+            opacity: 0.5;
+            width: 60%;
+            margin:0 auto 20px;
+
+        }
+
+        form table tr td{
+            color: white;
+            font-size: larger;
+            height: 50px;
+        }
+    </style>
+</head>
+<body >
+
+    <div class="title">
+        用户信息注册
+    </div>
+    <div class="register">
+        <form action="URL">
+            <table align="center" >
+                <tr>
+                    <td width="120"><div align="right">用户名：</div></td>
+                    <td width="298"><input type="text" name="用户名">*</td>
+                </tr>
+                <tr>
+                    <td><div align="right">密码：</div></td>
+                    <td><input type="password">*</td>
+                </tr>
+                <tr>
+                    <td><div align="right">确认密码：</div></td>
+                    <td><input type="password">*</td>
+                </tr>
+                <tr>
+                    <td><div align="right">性别：</div></td>
+                    <td>
+                        <input type="radio"name="sextype" value="男">男
+                        <input type="radio"name="sextype" value="女">女
+                    </td>
+                </tr>
+                <tr>
+                    <td><div align="right">出生日期：</div></td>
+                    <td><input type="text" name="出生日期" size="36"></td>
+                </tr>
+                <tr>
+                    <td><div align="right">联系方式：</div></td>
+                    <td><input type="text" name="联系方式"></td>
+                </tr>
+                <tr>
+                    <td><div align="right">电子邮件：</div></td>
+                    <td><input type="text" name="电子邮件" size="36">*</td>
+                </tr>
+                <tr>
+                    <td><div align="right">最高学历：</div></td>
+                    <td>
+                        <input type="radio"name="digtype" value="中专">中专
+                        <input type="radio"name="digtype" value="大专">大专
+                        <input type="radio"name="digtype" value="大学">大学
+                    </td>
+                </tr>
+                <tr>
+                    <td><div align="right">职业：</div></td>
+                    <td>
+                        <select name="job">
+                            <option value="学生">学生</option>
+                            <option value="上班">上班</option>
+                            <option value="打工">打工</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><div align="right">爱好：</div></td>
+                    <td>
+                        <input type="checkbox" name="hobbit" value="上网">上网
+                        <input type="checkbox" name="hobbit" value="篮球">篮球
+                        <input type="checkbox" name="hobbit" value="听歌">听歌
+                        <input type="checkbox" name="hobbit" value="下棋">下棋
+                    </td>
+                </tr>
+                <tr>
+                    <td><div align="right">留言：</div></td>
+                    <td>
+                        <textarea name="about" cols="40" rows="10">请写下您的想法</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="submit" value="提交" align="left">
+                        <input type="button" value="重写" align="right">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
